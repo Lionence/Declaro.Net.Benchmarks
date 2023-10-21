@@ -54,11 +54,17 @@ All in purpose to make it convinient for developers to interact with HTTP APIs, 
 **Declaro.Net** happens to be the fastest. Since it is also the latest, it has the most potential for new features and further optimization.
 
 ## Replicate test results
+**Windows**
 1. Set "Benchmarks" and "Functions" as startup projects.
 2. Change to "Release" configuration.
 3. Start.
 
-## Tested environment
+**Linux and Mac**
+0. Install Azure Functions Core Tool: https://learn.microsoft.com/en-us/azure/azure-functions/functions-run-local?tabs=macos%2Cisolated-process%2Cnode-v4%2Cpython-v2%2Chttp-trigger%2Ccontainer-apps&pivots=programming-language-csharp#install-the-azure-functions-core-tools
+1. Open terminal and change directory to the project's Function directory, then run 'func -c Release'
+2. Open a new terminal, change directory to the project's Benchmark directory, then run 'dotnet run -c Release'
+
+## Test environment
 The tests were executed on Windows and Ubuntu, native operation system installments.
 
 **Windows system specs:**
